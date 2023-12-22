@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SunSwiftBaseProject' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SunSwiftBaseProject
+  
+  ######################## UI
+  # AutoLayout 관련
+  pod 'SnapKit'
+  
+  ######################## Misc.
+  # View 간편 코드 생성
+  pod 'Then'
+
+end
