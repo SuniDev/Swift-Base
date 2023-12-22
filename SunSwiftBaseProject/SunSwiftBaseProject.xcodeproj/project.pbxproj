@@ -15,6 +15,10 @@
 		EAD1E8002B2817B6008BFBEE /* SunSwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E7FF2B2817B6008BFBEE /* SunSwiftBaseProjectTests.swift */; };
 		EAD1E80A2B2817B6008BFBEE /* SunSwiftBaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E8092B2817B6008BFBEE /* SunSwiftBaseProjectUITests.swift */; };
 		EAD1E80C2B2817B6008BFBEE /* SunSwiftBaseProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E80B2B2817B6008BFBEE /* SunSwiftBaseProjectUITestsLaunchTests.swift */; };
+		EAD1E81A2B3562A0008BFBEE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E8192B3562A0008BFBEE /* Utils.swift */; };
+		EAD1E81E2B356371008BFBEE /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E81D2B356371008BFBEE /* UIApplication+Extension.swift */; };
+		EAD1E8202B3573EA008BFBEE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E81F2B3573EA008BFBEE /* Date+Extension.swift */; };
+		EAD1E8222B35740C008BFBEE /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E8212B35740C008BFBEE /* UIWindow+Extension.swift */; };
 		F731222695627C4E1CD3B40C /* Pods_SunSwiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE30E61A260FF4F5237ED892 /* Pods_SunSwiftBaseProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,10 @@
 		EAD1E8052B2817B6008BFBEE /* SunSwiftBaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunSwiftBaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD1E8092B2817B6008BFBEE /* SunSwiftBaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSwiftBaseProjectUITests.swift; sourceTree = "<group>"; };
 		EAD1E80B2B2817B6008BFBEE /* SunSwiftBaseProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSwiftBaseProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAD1E8192B3562A0008BFBEE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EAD1E81D2B356371008BFBEE /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		EAD1E81F2B3573EA008BFBEE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		EAD1E8212B35740C008BFBEE /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +101,6 @@
 				39A8078EBF6FF166206623AB /* Pods-SunSwiftBaseProject.debug.xcconfig */,
 				8C58B50A66949DC8AB6BA573 /* Pods-SunSwiftBaseProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,6 +129,8 @@
 		EAD1E7E72B2817B4008BFBEE /* SunSwiftBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				EAD1E81C2B35635C008BFBEE /* Extensions */,
+				EAD1E8182B35627D008BFBEE /* Utils */,
 				EAD1E7E82B2817B4008BFBEE /* AppDelegate.swift */,
 				EAD1E7EC2B2817B4008BFBEE /* ViewController.swift */,
 				EAD1E7EE2B2817B4008BFBEE /* Main.storyboard */,
@@ -147,6 +156,24 @@
 				EAD1E80B2B2817B6008BFBEE /* SunSwiftBaseProjectUITestsLaunchTests.swift */,
 			);
 			path = SunSwiftBaseProjectUITests;
+			sourceTree = "<group>";
+		};
+		EAD1E8182B35627D008BFBEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EAD1E8192B3562A0008BFBEE /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EAD1E81C2B35635C008BFBEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAD1E81D2B356371008BFBEE /* UIApplication+Extension.swift */,
+				EAD1E81F2B3573EA008BFBEE /* Date+Extension.swift */,
+				EAD1E8212B35740C008BFBEE /* UIWindow+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,8 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD1E8202B3573EA008BFBEE /* Date+Extension.swift in Sources */,
 				EAD1E7ED2B2817B4008BFBEE /* ViewController.swift in Sources */,
 				EAD1E7E92B2817B4008BFBEE /* AppDelegate.swift in Sources */,
+				EAD1E81E2B356371008BFBEE /* UIApplication+Extension.swift in Sources */,
+				EAD1E81A2B3562A0008BFBEE /* Utils.swift in Sources */,
+				EAD1E8222B35740C008BFBEE /* UIWindow+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +542,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +572,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
