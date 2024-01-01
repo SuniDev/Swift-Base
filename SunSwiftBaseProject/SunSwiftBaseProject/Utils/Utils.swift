@@ -10,7 +10,7 @@
 import UIKit
 
 class Utils {
-    public static let STATUS_HEIGHT = UIApplication.shared.statusBarFrame.size.height   // 상태바 높이
+    static let STATUS_HEIGHT: CGFloat = UIApplication.shared.keyWindowInConnectedScenes?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0  // 상태바 높이
 
     /**
      # safeAreaTopInset
