@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA55CEB32B4448E600FF9F70 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA55CEB22B4448E600FF9F70 /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EA55CEB52B44490A00FF9F70 /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55CEB42B44490A00FF9F70 /* OSLog+Extension.swift */; };
+		EA9FD2B02B47E28A009BC58C /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FD2AF2B47E28A009BC58C /* Comments.swift */; };
 		EAD1E7E92B2817B4008BFBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E7E82B2817B4008BFBEE /* AppDelegate.swift */; };
 		EAD1E7ED2B2817B4008BFBEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E7EC2B2817B4008BFBEE /* ViewController.swift */; };
 		EAD1E7F02B2817B4008BFBEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD1E7EE2B2817B4008BFBEE /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		BE30E61A260FF4F5237ED892 /* Pods_SunSwiftBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunSwiftBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA55CEB22B4448E600FF9F70 /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
 		EA55CEB42B44490A00FF9F70 /* OSLog+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Extension.swift"; sourceTree = "<group>"; };
+		EA9FD2AF2B47E28A009BC58C /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		EAD1E7E52B2817B4008BFBEE /* SunSwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunSwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD1E7E82B2817B4008BFBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD1E7EC2B2817B4008BFBEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EA8DC4242B467D5D00A98318 /* SwiftBasics */ = {
+			isa = PBXGroup;
+			children = (
+				EA9FD2AF2B47E28A009BC58C /* Comments.swift */,
+			);
+			path = SwiftBasics;
+			sourceTree = "<group>";
+		};
 		EAD1E7DC2B2817B4008BFBEE = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		EAD1E7E72B2817B4008BFBEE /* SunSwiftBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				EA8DC4242B467D5D00A98318 /* SwiftBasics */,
 				EAD1E81C2B35635C008BFBEE /* Extensions */,
 				EAD1E8182B35627D008BFBEE /* Utils */,
 				EAD1E7E82B2817B4008BFBEE /* AppDelegate.swift */,
@@ -365,6 +376,7 @@
 				EA55CEB52B44490A00FF9F70 /* OSLog+Extension.swift in Sources */,
 				EAD1E81A2B3562A0008BFBEE /* Utils.swift in Sources */,
 				EAD1E8222B35740C008BFBEE /* UIWindow+Extension.swift in Sources */,
+				EA9FD2B02B47E28A009BC58C /* Comments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
