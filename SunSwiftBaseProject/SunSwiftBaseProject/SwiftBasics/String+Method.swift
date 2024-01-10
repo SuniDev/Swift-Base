@@ -18,7 +18,7 @@ class StringMethod {
     
     // MARK: 접두어
     func hasPrefix() {
-        var blog: String = "DevSuni Blog"
+        let blog: String = "DevSuni Blog"
         
         print(blog.hasPrefix("Dev"))    // true
         print(blog.hasPrefix("Suni"))   // false
@@ -26,7 +26,7 @@ class StringMethod {
     
     // MARK: 접미어
     func hasSuffix() {
-        var blog: String = "DevSuni Blog"
+        let blog: String = "DevSuni Blog"
         
         print(blog.hasSuffix("Blog"))   // true
         print(blog.hasSuffix("blog"))   // false - 대소문자 구분
@@ -34,14 +34,14 @@ class StringMethod {
     
     // MARK: 대문자 변환
     func upperCased() {
-        var name: String = "suni"
+        let name: String = "suni"
         
         print(name.uppercased())    // SUNI
     }
     
     // MARK: 소문자 변환
     func lowerCassed() {
-        var name: String = "SUNI"
+        let name: String = "SUNI"
         
         print(name.lowercased())    // suni
     }
@@ -59,7 +59,7 @@ class StringMethod {
     
     // MARK: 문자열 길이
     func count() {
-        var greeting: String = "Hello"
+        let greeting: String = "Hello"
         
         print(greeting.count)   // 5
     }
