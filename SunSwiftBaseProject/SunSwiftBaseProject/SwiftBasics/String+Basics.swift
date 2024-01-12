@@ -1,5 +1,5 @@
 //
-//  String+Method.swift
+//  String+Basics.swift
 //  SunSwiftBaseProject
 //
 //  Created by suni on 2024/01/05.
@@ -8,7 +8,7 @@
 import Foundation
 
 /// String 타입이 제공하는 기능(함수, 연산자, 프로퍼티 등) 테스트
-class StringMethod {
+class StringBasics {
     
     // MARK: 여러 줄의 문자열 """
     var multiLineString: String = """
