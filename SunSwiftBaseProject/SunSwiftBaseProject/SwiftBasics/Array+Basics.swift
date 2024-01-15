@@ -11,19 +11,19 @@ import Foundation
 public class ArrayBasics {
         
     func countTest() {
-        var names: Array<String> = ["suni", "zico", "mino"]
+        let names: Array<String> = ["suni", "zico", "mino"]
         
         print(names.count)  // 3
     }
     
     func emptyTest() {
-        var emptyArray: [Any] = [Any]()
+        let emptyArray: [Any] = [Any]()
         
         print(emptyArray.isEmpty)   // true
     }
     
     static func firstLastTest() {
-        var names: Array<String> = ["suni", "zico", "mino", "zico"]
+        let names: Array<String> = ["suni", "zico", "mino", "zico"]
         
         print(names.firstIndex(of: "zico") ?? "index nil")  // 1
         print(names.firstIndex(of: "pio") ?? "index nil")   // index nil
