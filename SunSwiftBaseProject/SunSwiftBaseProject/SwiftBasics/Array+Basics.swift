@@ -8,7 +8,7 @@
 import Foundation
 
 /// Array 타입이 제공하는 기능(함수, 연산자, 프로퍼티 등) 테스트
-public class ArrayBasics {
+class ArrayBasics {
         
     func countTest() {
         let names: Array<String> = ["suni", "zico", "mino"]
@@ -32,7 +32,7 @@ public class ArrayBasics {
         print(names.last ?? "last nil")     // zico
     }
     
-    static func appendTest() {
+    func appendTest() {
         var names: Array<String> = ["suni", "zico", "mino"]
         
         names.append("alice")   // 마지막에 alice 추가
@@ -42,7 +42,7 @@ public class ArrayBasics {
         print(names)            // ["suni", "zico", "mino", "alice", "pio", "junny"]
     }
     
-    static func insertTest() {
+    func insertTest() {
         var names: Array<String> = ["suni", "zico", "mino"]
         
         names.insert("alice", at: 2)    // 인덱스 2에 삽입
@@ -52,7 +52,7 @@ public class ArrayBasics {
         print(names)                                        // ["suni", "pio", "junny", "zico", "alice", "mino"]
     }
     
-    static func removeTest() {
+    func removeTest() {
         var names: Array<String> = ["suni", "zico", "mino", "alice", "pio", "junny"]
         
         print(names.removeFirst())  // 첫번째 요소 제거 후 제거된 요소 반환 : suni

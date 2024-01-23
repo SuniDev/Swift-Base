@@ -12,6 +12,7 @@
 		EA55CEB52B44490A00FF9F70 /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55CEB42B44490A00FF9F70 /* OSLog+Extension.swift */; };
 		EA7B9ECD2B553DCC00AFD266 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B9ECC2B553DCB00AFD266 /* String+Extension.swift */; };
 		EA991BDA2B53B4BA0081F3D9 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA991BD92B53B4BA0081F3D9 /* Array+Extension.swift */; };
+		EA9E9A622B5FF08D0051181B /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E9A612B5FF08D0051181B /* Algorithm.swift */; };
 		EA9FD2B02B47E28A009BC58C /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FD2AF2B47E28A009BC58C /* Comments.swift */; };
 		EA9FD2B22B47F668009BC58C /* String+Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FD2B12B47F668009BC58C /* String+Basics.swift */; };
 		EAB64BF22B5120A8004A4260 /* Array+Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB64BF12B5120A8004A4260 /* Array+Basics.swift */; };
@@ -57,6 +58,7 @@
 		EA55CEB42B44490A00FF9F70 /* OSLog+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Extension.swift"; sourceTree = "<group>"; };
 		EA7B9ECC2B553DCB00AFD266 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		EA991BD92B53B4BA0081F3D9 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		EA9E9A612B5FF08D0051181B /* Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
 		EA9FD2AF2B47E28A009BC58C /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		EA9FD2B12B47F668009BC58C /* String+Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Basics.swift"; sourceTree = "<group>"; };
 		EAB64BF12B5120A8004A4260 /* Array+Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Basics.swift"; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			path = SwiftBasics;
 			sourceTree = "<group>";
 		};
+		EA9E9A602B5FF0830051181B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E9A612B5FF08D0051181B /* Algorithm.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		EAD1E7DC2B2817B4008BFBEE = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 		EAD1E7E72B2817B4008BFBEE /* SunSwiftBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				EA9E9A602B5FF0830051181B /* Test */,
 				EA8DC4242B467D5D00A98318 /* SwiftBasics */,
 				EAD1E81C2B35635C008BFBEE /* Extensions */,
 				EAD1E8182B35627D008BFBEE /* Utils */,
@@ -391,6 +402,7 @@
 				EAD1E8202B3573EA008BFBEE /* Date+Extension.swift in Sources */,
 				EAD1E7ED2B2817B4008BFBEE /* ViewController.swift in Sources */,
 				EA0E24582B4D2A39001AC252 /* Basics.swift in Sources */,
+				EA9E9A622B5FF08D0051181B /* Algorithm.swift in Sources */,
 				EAB64BF22B5120A8004A4260 /* Array+Basics.swift in Sources */,
 				EAD1E7E92B2817B4008BFBEE /* AppDelegate.swift in Sources */,
 				EAD1E81E2B356371008BFBEE /* UIApplication+Extension.swift in Sources */,
