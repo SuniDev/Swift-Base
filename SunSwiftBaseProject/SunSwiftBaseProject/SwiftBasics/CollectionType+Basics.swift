@@ -7,6 +7,28 @@
 
 import Foundation
 
+// MARK: 컬렉션형
+class CollectionType {
+    // MARK: 임의의 요소 추출 및 되섞기
+    static func randomTest() {
+        var array: [Int] = [0, 1, 2, 3, 4]
+        var set: Set<Int> = [0, 1, 2, 3, 4]
+        var dictionary: [String: Int] = ["a": 1, "b": 2, "c": 3]
+        var string: String = "string"
+
+        print(array.randomElement())    // 임의의 요소 - Optional(3)
+        
+        print(array.shuffled()) // [0, 4, 2, 1, 3] : 뒤죽박죽된 배열
+        print(array)            // [0, 1, 2, 3, 4] : array 내부는 그대로
+        array.shuffle()     // array 자체를 뒤죽박죽으로 뒤섞기
+        print(array)        // [0, 4, 3, 2, 1]
+        
+        print(set.shuffled())   // [3, 4, 2, 1, 0] : 세트를 뒤섞으면 배열로 반환
+        //set.shuffle()         // ERROR: 세트는 순서가 없기 때문에 스스로 뒤섞일 수 없다.
+        print(dictionary.shuffled())    // [(key: "b", value: 2), (key: "c", value: 3), (key: "a", value: 1)] : 딕셔너리는 뒤섞이면 (키, 값)이 쌍을 이룬 튜플의 배열을 반환
+        print(string.shuffled())        // ["s", "g", "i", "r", "n", "t"] : String도 컬렉션!
+    }
+}
 // MARK: 배열(Array)
 class ArrayBasics {
         
