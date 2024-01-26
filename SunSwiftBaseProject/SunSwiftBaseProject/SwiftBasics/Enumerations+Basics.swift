@@ -80,7 +80,7 @@ class EnumerationsBasics {
         order = .set(burger: .cheese, drink: .coke)   // 치즈 버거 + 콜라 세트
     }
     
-    // MARK: 항목 순회
+    // MARK: 항목 순회 - CaseIterable
     static func caseIterableBasic() {
         // CaseIterable Protocol을 채택한 Enumeration
         enum Color: CaseIterable {
@@ -149,7 +149,7 @@ class EnumerationsBasics {
         print(Menu.allCases)        // 모든 경우의 항목(case) 컬렉션
     }
     
-    // MARK: Recurcive Enumerations
+    // MARK: Recurcive Enumerations - indirect
     // case에 한정 적용
 //    enum ArithmeticExpression {
 //        case number(Int)
@@ -183,6 +183,48 @@ class EnumerationsBasics {
         
         let result: Int = evaluate(final)
         print("(6 + 3) * 2 = \(result)")    // (6 + 3) * 2 = 18
+    }
+    
+    // MARK: 비교 가능한 Enumerations - Comparable
+    static func comparableExample() {
+        enum AppleDevice: Comparable {
+            case iPhone
+            case iPad
+            case macBook
+            case iMac
+        }
+        
+        let myDevice: AppleDevice = .iMac
+        let yourDevice: AppleDevice = .iPhone
+        
+        if myDevice > yourDevice {
+            print("제 디바이스가 더 크네요!")
+        } else if myDevice < yourDevice {
+            print("당신의 디바이스가 더 크네요!")
+        } else {
+            print("우리 디바이스가 같네요!")
+        }
+        // 제 디바이스가 더 크네요!
+    }
+    
+    static func comparableExample2() {
+        enum AppleDevice: Comparable {
+            case iPhone(version: String)
+            case iPad(version: String)
+            case macBook
+            case iMac
+        }
+        
+        var devices: [AppleDevice] = []
+        devices.append(.iMac)
+        devices.append(.iPhone(version: "6.1"))
+        devices.append(.iPhone(version: "14.3"))
+        devices.append(.iPad(version: "10.3"))
+        devices.append(.macBook)
+        
+        let sortedDevices: [AppleDevice] = devices.sorted()
+        print(sortedDevices)
+        // [AppleDevice.iPhone(version: "14.3"), AppleDevice.iPhone(version: "6.1"), AppleDevice.iPad(version: "10.3"), AppleDevice.macBook, AppleDevice.iMac]
     }
     
 }
