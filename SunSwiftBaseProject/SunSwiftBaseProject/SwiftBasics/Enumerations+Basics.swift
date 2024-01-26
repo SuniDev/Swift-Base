@@ -80,7 +80,8 @@ class EnumerationsBasics {
         order = .set(burger: .cheese, drink: .coke)   // 치즈 버거 + 콜라 세트
     }
     
-    static func caseIterableTest() {
+    // MARK: 항목 순회
+    static func caseIterableBasic() {
         // CaseIterable Protocol을 채택한 Enumeration
         enum Color: CaseIterable {
             case red, green, blue, yellow
@@ -93,7 +94,7 @@ class EnumerationsBasics {
         }
     }
     
-    static func caseIterableWithAvailableTest() {
+    static func caseIterableExample() {
         // 플랫폼별 사용 조건을 추가하는 경우 : available 속성을 갖는 Enumeration
         enum Color: CaseIterable {
             case red, green, blue, yellow
@@ -117,7 +118,7 @@ class EnumerationsBasics {
         }
     }
     
-    static func caseIterableWithAssociatedValues() {
+    static func caseIterableExample2() {
         enum Burger: CaseIterable {
             case bulgogi
             case shrimp
@@ -147,4 +148,41 @@ class EnumerationsBasics {
         print(Menu.allCases.count)  // 9 : 모든 경우의 수
         print(Menu.allCases)        // 모든 경우의 항목(case) 컬렉션
     }
+    
+    // MARK: Recurcive Enumerations
+    // case에 한정 적용
+//    enum ArithmeticExpression {
+//        case number(Int)
+//        indirect case addition(ArithmeticExpression, ArithmeticExpression)
+//        indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
+//    }
+    // Enumerations 전체에 적용
+    indirect enum ArithmeticExpression {
+        case number(Int)
+        case addition(ArithmeticExpression, ArithmeticExpression)
+        case multiplication(ArithmeticExpression, ArithmeticExpression)
+    }
+    
+    // ArithmeticExpression 계산을 도와주는 Recursive Function
+    func evaluate(_ expression: ArithmeticExpression) -> Int {
+        switch expression {
+        case let .number(value):
+            return value
+        case let .addition(left, right):
+            return evaluate(left) + evaluate(right)
+        case let .multiplication(left, right):
+            return evaluate(left) * evaluate(right)
+        }
+    }
+    
+    func recurciveEnumerationsExample() {
+        let six = ArithmeticExpression.number(6)
+        let three = ArithmeticExpression.number(3)
+        let sum = ArithmeticExpression.addition(six, three)
+        let final = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(2))
+        
+        let result: Int = evaluate(final)
+        print("(6 + 3) * 2 = \(result)")    // (6 + 3) * 2 = 18
+    }
+    
 }
