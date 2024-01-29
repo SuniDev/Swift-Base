@@ -11,6 +11,7 @@
 		EA55CEB32B4448E600FF9F70 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA55CEB22B4448E600FF9F70 /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EA55CEB52B44490A00FF9F70 /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55CEB42B44490A00FF9F70 /* OSLog+Extension.swift */; };
 		EA7B9ECD2B553DCC00AFD266 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B9ECC2B553DCB00AFD266 /* String+Extension.swift */; };
+		EA7F172A2B67A7BA0046B0D0 /* Operator+Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F17292B67A7BA0046B0D0 /* Operator+Basics.swift */; };
 		EA991BDA2B53B4BA0081F3D9 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA991BD92B53B4BA0081F3D9 /* Array+Extension.swift */; };
 		EA9E9A622B5FF08D0051181B /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E9A612B5FF08D0051181B /* Algorithm.swift */; };
 		EA9E9A662B5FFB2F0051181B /* CollectionType+Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E9A652B5FFB2F0051181B /* CollectionType+Basics.swift */; };
@@ -56,6 +57,7 @@
 		EA55CEB22B4448E600FF9F70 /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
 		EA55CEB42B44490A00FF9F70 /* OSLog+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Extension.swift"; sourceTree = "<group>"; };
 		EA7B9ECC2B553DCB00AFD266 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EA7F17292B67A7BA0046B0D0 /* Operator+Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Basics.swift"; sourceTree = "<group>"; };
 		EA991BD92B53B4BA0081F3D9 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		EA9E9A612B5FF08D0051181B /* Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
 		EA9E9A652B5FFB2F0051181B /* CollectionType+Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionType+Basics.swift"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				EA0E24572B4D2A39001AC252 /* DataType+Basics.swift */,
 				EA9E9A652B5FFB2F0051181B /* CollectionType+Basics.swift */,
 				EA9E9A672B60E3FE0051181B /* Enumerations+Basics.swift */,
+				EA7F17292B67A7BA0046B0D0 /* Operator+Basics.swift */,
 			);
 			path = SwiftBasics;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				EAD1E7E92B2817B4008BFBEE /* AppDelegate.swift in Sources */,
 				EAD1E81E2B356371008BFBEE /* UIApplication+Extension.swift in Sources */,
 				EA7B9ECD2B553DCC00AFD266 /* String+Extension.swift in Sources */,
+				EA7F172A2B67A7BA0046B0D0 /* Operator+Basics.swift in Sources */,
 				EA55CEB52B44490A00FF9F70 /* OSLog+Extension.swift in Sources */,
 				EAD1E81A2B3562A0008BFBEE /* Utils.swift in Sources */,
 				EAD1E8222B35740C008BFBEE /* UIWindow+Extension.swift in Sources */,
