@@ -34,3 +34,67 @@ class OperatorBasic {
 }
 
 class referenceClass { }
+
+// MARK: 전위 연산자
+// ! 연산자 오버 로드
+prefix func ! (value: String) -> Bool {
+    return value.isEmpty
+}
+
+// 전위 연산자 사용자 정의 ++
+prefix operator ++
+
+prefix func ++ (value: Int) -> Int {
+    return value + 1
+}
+
+// 사용자 정의 전위 연산자 ++ 오버 로드
+prefix func ++ (value: String) -> String {
+    return value + " " + value
+}
+
+extension OperatorBasic {
+    static func prefixOperator() {
+        let stringValue: String = "suni"
+        print(!stringValue) // false
+        
+        let intValue: Int = 3
+        print(++intValue)  // 4
+        
+        print(++stringValue) // suni suni
+    }
+}
+
+// MARK: 후위 연산자
+// 후위 연산자 사용자 정의 --
+postfix operator --
+
+postfix func -- (value: Int) -> Int {
+    return value - 1
+}
+
+extension OperatorBasic {
+    static func postfixOperator() {
+        let intValue: Int = 20
+        print(intValue--)   // 19
+    }
+}
+
+// MARK: 우선 순위
+// 전위 연산과 후위 연산 함께 테스트
+// value의 제곱을 구하는 연산자 정의 **
+prefix operator **
+
+prefix func ** (value: Int) -> Int {
+    return value * value
+}
+
+extension OperatorBasic {
+    static func priorityOperator() {
+        let value: Int = 5
+        print(**value--)    // value-- = 4 -> **value = 16
+    }
+}
+
+// MARK: 중위 연산자 정의와 구현
+
