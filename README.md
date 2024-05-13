@@ -1,2 +1,1 @@
-# SwiftBaseProject
-Swift Project Base Source
+# Swift Base Source
